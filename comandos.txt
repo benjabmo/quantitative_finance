@@ -12,3 +12,9 @@ git status
 
 # Guardar cambios
 git add
+
+# Comentar cambios
+git commit -m "comentario que deseamos escribir"
+
+# Actualizar branch
+git push origin main
