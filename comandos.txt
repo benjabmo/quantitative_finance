@@ -1,0 +1,14 @@
+# === crear ambiente virtual ===
+python3 -m venv .venv
+
+# === activar ambiente virtual ===
+source .venv/bin/activate
+
+# === instalar librerias ===
+pip3 install -r requirements.txt
+
+# === COMANDOS EN GITHUB ===
+git status
+
+# Guardar cambios
+git add
