@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # Descargar retornos del portafolio
     df = portfolio_returns(tickers=tickers, start=start, end=end)
     print(df.head(10))
-    
+
     # Calculo Volatilidad
     vector_w = np.array([1/len(tickers)] * len(tickers))
     sigma = portfolio_volatility(df=df,vector_w=vector_w)
@@ -22,4 +22,6 @@ if __name__ == '__main__':
     confidence = 0.05
     var = VaR(sigma=sigma, confidence=confidence)
     print(var)
+
+
     
